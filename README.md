@@ -1,5 +1,5 @@
 # portfolio_site
-Deplyed site - https://sebastine-ogu.netlify.app/
+Deployed site - https://sebastine-ogu.netlify.app/
 
 # Tech stack
 client: HTML, CSS, JavaScript
