@@ -8,6 +8,10 @@
     <title> Sebastine Ogu || Front-End Web Developer </title>
     <!--===== Font Awesome =====-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!--===== Main CSS =====-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -56,7 +60,8 @@
                             explore other technologies that catch my interest.</p>
                         <p>I have good listening and communicating skills, the ability to collaborate, a positive
                             attitude and an overall good work ethic.</p>
-                        <p>I am enthusiastic about using relevant, modern technologies in creating web solutions for
+                        <p>I am enthusiastic about using relevant, modern technologies in creating web solutions as part
+                            of a team or for
                             clients, ranging from individuals to all kinds of businesses. </p>
 
                         <span class="row  justify-content-center">
@@ -96,19 +101,20 @@
                 <!-- <h3 class="main-title">My Top Skills</h3> -->
 
                 <div class="skills-wrapper">
-                    <div class="first-set animate__animated animate__pulse">
-                        <img src="/images/icons/icons8-html-5.svg" alt="Html icon" loading="lazy"
-                            class="icon icon-card" />
-                        <img src="/images/icons/icons8-css3.svg" alt="Css3 icon" loading="lazy"
-                            class="icon icon-card" />
-                        <img src="/images/icons/icons8-bootstrap.svg" alt="Bootstrap icon" loading="lazy"
-                            class="icon icon-card" />
-                        <img src="/images/icons/icons8-javascript.svg" alt="Javascript icon" loading="lazy"
-                            class="icon icon-card" />
-                        <img src="/images/icons/icons8-react-native.svg" alt="React icon" loading="lazy"
-                            class="icon icon-card" />
-                        <img src="/images/icons/icons8-git.svg" alt="Git icon" loading="lazy" class="icon icon-card" />
-                    </div>
+                    <img src="/images/icons/icons8-html-5.svg" class="skill-icon icon-card" alt="Html icon"
+                        loading="lazy" />
+                    <img src="/images/icons/icons8-css3.svg" class="skill-icon icon-card" alt="Css3 icon"
+                        loading="lazy" />
+                    <img src="/images/icons/icons8-bootstrap.svg" class="skill-icon icon-card" alt="Bootstrap icon"
+                        loading="lazy" />
+                    <img src="/images/skills/tailwindcss.png" class="skill-icon icon-card" alt="Bootstrap icon"
+                        loading="lazy" />
+                    <img src="/images/icons/icons8-javascript.svg" class="skill-icon icon-card" alt="Javascript icon"
+                        loading="lazy" />
+                    <img src="/images/icons/icons8-react-native.svg" class="skill-icon icon-card" alt="React icon"
+                        loading="lazy" />
+                    <img src="/images/icons/icons8-git.svg" class="skill-icon icon-card" alt="Git icon"
+                        loading="lazy" />
                 </div>
             </div>
         </section>
@@ -119,7 +125,7 @@
             <div class="container">
                 <div class="row">
                     <div class="section-title text-align">
-                        <h5 class="sub-title">Projects</h5>
+                        <h5 class="sub-title">Portfolio</h5>
                         <h3 class="main-title">Some of my Projects</h3>
                         <ul class="line">
                             <li></li>
@@ -130,85 +136,63 @@
                 </div>
 
 
-                <div class="portfolio-row">
+                <div class="portfolio-row portfolios-container">
                     <!--===== portfolio-item start =====-->
 
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-inner">
-                            <div class="portfolio-img">
-                                <img src="images/projects/foodtribe.jpg" alt="FoodTribe site image" loading="lazy">
-                                <h1>FoodTribe</h1>
-                                <p>This website presents varieties of food to customers through a simple, responsive
-                                    webspage design.<br />
-                                    <br>It was built with HTML5,Javascript,CSS3 and the Bootstrap CSS framework.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class=" portfolio-button row  justify-content-center">
-                            <a class="btn-link" href="https://foodtribe.netlify.app"> VISIT SITE
-                            </a>
-                        </div>
+                    <div class="portfolio-container portfolio-card">
+                        <img src="images/projects/admin dashboard.png" alt="admin dashboard thumbnail" loading="lazy"
+                            class="project-pic" />
+                        <h3 class="project-title">Admin Dashboard</h3>
+                        <p class="project-details">
+                            This website presents an admin dashboard with an ecommerce page, employers, customers pages
+                            with different built-in charts and apps.<br />
+                            <br />It was built with ReactJS, TailwindCSS library and Syncfusion UI components.
+                        </p>
+                        <a class="btn-link" href="https://thrivedashboard.netlify.app" target="_blank"> VISIT SITE
+                        </a>
                     </div>
 
+                    <div class="portfolio-container portfolio-card">
+                        <img src="images/projects/your_todo_app.jpg" alt="Todo app thumbnail" loading="lazy"
+                            class="project-pic">
 
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-inner">
-                            <div class="portfolio-img">
-                                <img src="images/projects/your_todo_app.jpg" alt="Todo app thumbnail" loading="lazy">
-                                <h1>Thrive Todo App</h1>
-                                <p>This app presents a simple, beautiful, responsive
-                                    interface for adding, editing and removing todo items or marking them as
-                                    complete.<br />
-                                    <br />It was built with HTML5, CSS3 and the ReactJS library.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-button row  justify-content-center">
-                            <a class="btn-link" href="https://thrive-todoapp.netlify.app"> VISIT SITE
-                            </a>
-                        </div>
+                        <h3 class="project-title">Your Todo App</h3>
+                        <p class="project-details">
+                            This app presents a simple, beautiful, responsive
+                            interface for adding, editing and removing todo items or marking them as
+                            complete.<br />
+                            <br />It was built with HTML5, CSS3 and the ReactJS library.
+                        </p>
+                        <a class="btn-link" href="https://thrive-todoapp.netlify.app" target="_blank"> VISIT SITE
+                        </a>
                     </div>
 
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-inner">
-                            <div class="portfolio-img">
-                                <img src="images/projects/cocktailshub.jpg" alt="cocktailshub site image"
-                                    loading="lazy">
-                                <h1>The Cocktails Hub </h1>
-                                <p>This site presents cocktail info and how they can be prepared by serving data from a cocktails API.
-                                    <br /> Users can search for cocktails of their choice by typing a letter of a
-                                    cocktail
-                                    name or the complete name.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-button row  justify-content-center">
-                            <a class="btn-link" href="https://thecocktailhub.netlify.app/">
-                                VISIT SITE </a>
-                        </div>
+                    <div class="portfolio-container portfolio-card">
+                        <img src="images/projects/cocktailshub.jpg" alt="cocktailshub site thumbnail" loading="lazy"
+                            class="project-pic" />
+                        <h3 class="project-title">The Cocktails Hub</h3>
+                        <p class="project-details">
+                            This site presents cocktail info and how they can be prepared by serving data from a
+                            cocktails API.<br />
+                            <br /> Users can search for cocktails of their choice by typing a letter or the complete
+                            name of the cocktail.
+                        </p>
+                        <a class="btn-link" href="https://thecocktailhub.netlify.app/" target="_blank"> VISIT SITE
+                        </a>
                     </div>
 
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-inner">
-                            <div class="portfolio-img">
-                                <img src="images/projects/me-n-u.jpg" alt="me 'n' u app" loading="lazy">
-                                <h1>Me n U Website</h1>
-                                <p>This Website uses the React material UI library to create responsive user interfaces
-                                    as in the likes of Facebook.</p>
-                                <br /> Users can toggle the nightmode botton to change screen display to nightmode
-                                and add post.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-button row  justify-content-center">
-                            <a class="btn-link" href="https://me-n-u.netlify.app/">
-                                VISIT SITE </a>
-                        </div>
+                    <div class="portfolio-container portfolio-card">
+                        <img src="images/projects/me-n-u.jpg" alt="Me n U app thumbnail" loading="lazy"
+                            class="project-pic" />
+                        <h3 class="project-title">Me n U Web App</h3>
+                        <p class="project-details">
+                            This Website uses the React material UI library to create a simple, beautiful user
+                            interface. <br />
+                            <br /> Users can toggle the nightmode botton to change screen display to nightmode
+                            and add post.
+                        </p>
+                        <a class="btn-link" href="https://me-n-u.netlify.app/" target="_blank"> VISIT SITE
+                        </a>
                     </div>
 
                     <!--===== portfolio-item end =====-->
