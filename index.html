@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="light-theme">
     <!--===== Navbar Start =====-->
     <nav class="navbar">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="logo"><a href="index.html"><span>Your </span>Front-End <span>Web Developer</span></a></div>
+                <div class="logo"><a href="index.html"><span>Your </span>Front-end <span>Web Developer</span></a></div>
                 <div class="links">
                     <ul class="menu">
                         <li class="nav-item"><a href="#home" class="nav-link active">Home <span></span></a></li>
@@ -30,6 +30,18 @@
                         <li class="nav-item"><a href="#contact" class="nav-link">Contact <span></span></a></li>
                     </ul>
                 </div>
+
+                <div class="change-mode">
+                    <label class="switch">
+                        <i class="fas fa-adjust"></i>
+                        <div class='switch-items'>
+                            <input class="slider-theme" type="checkbox" onclick="changeMode()" />
+                            <span class="slider round"></span>
+                        </div>
+                    </label>
+                </div>
+
+    
                 <div class="menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -43,20 +55,25 @@
         <section class="home-section" id="home">
             <ul class="header-social">
                 <!--===== Header Social =====-->
-                <li><a href="https://www.linkedin.com/in/sebastine-ogu-b36324144"><i class="fab fa-linkedin"></i></a>
+                <li><a href="https://www.linkedin.com/in/sebastine-ogu-b36324144" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
                 </li>
-                <li><a href="https://github.com/Sebastine-thrive"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://github.com/Sebastine-thrive" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li><a href="https://twitter.com/sebasious1" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
             </ul>
+
             <div class="container">
                 <div class="row align-items-center">
                     <div class="home-text">
                         <h4>Hello! &#128075</h4>
-                        <h1>I'm Sebastine Ogu</h1>
+                      <p>  I am <strong class="home-text"> Sebastine Ogu </strong>   </p>  
                         <span>A Front-End Web Developer</span>
                         <p> I am a graduate of Industrial Engineering; minored in Computer Science.
                             I also graduated from an intensive Udemy Boootcamp where I
                             learnt Software development techniques and acquired Web
-                            development skills such as: HTML, CSS, JAVASCRIPT, BOOTSTRAP and REACTJS. Beyond these, I
+                            development skills such as: HTML,  CSS, JAVASCRIPT, BOOTSTRAP and REACTJS. Beyond these, I
                             explore other technologies that catch my interest.</p>
                         <p>I have good listening and communicating skills, the ability to collaborate, a positive
                             attitude and an overall good work ethic.</p>
@@ -65,8 +82,8 @@
                             clients, ranging from individuals to all kinds of businesses. </p>
 
                         <span class="row  justify-content-center">
-                            <button class="btn-1">
-                                <a href="Resume document/Sebastine_Front-End Web Developer.pdf" download>DOWNLOAD
+                            <button class="btn-1 ">
+                                <a href="Resume document/Sebastine_Front-End Web Developer.pdf" download >DOWNLOAD
                                     RESUME
                                 </a> </button>
                         </span>
@@ -153,21 +170,6 @@
                     </div>
 
                     <div class="portfolio-container portfolio-card">
-                        <img src="images/projects/your_todo_app.jpg" alt="Todo app thumbnail" loading="lazy"
-                            class="project-pic">
-
-                        <h3 class="project-title">Your Todo App</h3>
-                        <p class="project-details">
-                            This app presents a simple, beautiful, responsive
-                            interface for adding, editing and removing todo items or marking them as
-                            complete.<br />
-                            <br />It was built with HTML5, CSS3 and the ReactJS library.
-                        </p>
-                        <a class="btn-link" href="https://thrive-todoapp.netlify.app" target="_blank"> VISIT SITE
-                        </a>
-                    </div>
-
-                    <div class="portfolio-container portfolio-card">
                         <img src="images/projects/cocktailshub.jpg" alt="cocktailshub site thumbnail" loading="lazy"
                             class="project-pic" />
                         <h3 class="project-title">The Cocktails Hub</h3>
@@ -192,6 +194,20 @@
                             and add post.
                         </p>
                         <a class="btn-link" href="https://me-n-u.netlify.app/" target="_blank"> VISIT SITE
+                        </a>
+                    </div>
+
+                    <div class="portfolio-container portfolio-card">
+                        <img src="images/projects/your_todo_app.jpg" alt="Todo app thumbnail" loading="lazy" class="project-pic">
+                    
+                        <h3 class="project-title">Your Todo App</h3>
+                        <p class="project-details">
+                            This app presents a simple, beautiful, responsive
+                            interface for adding, editing and removing todo items or marking them as
+                            complete.<br />
+                            <br />It was built with HTML5, CSS3 and the ReactJS library.
+                        </p>
+                        <a class="btn-link" href="https://thrive-todoapp.netlify.app" target="_blank"> VISIT SITE
                         </a>
                     </div>
 
@@ -283,7 +299,7 @@
 
     <!-- Scroll to top arrow-->
     <i class="scroll-up" id="scroll-up">
-        <img src="/images/icons/icons8-up.gif" class="socicon up-arrow" alt="up arrow" /></i>
+        <img src="/images/icons/icons8-arrow.gif" class="socicon up-arrow" alt="up arrow" /></i>
 
 
 
@@ -295,12 +311,12 @@
             </div>
 
             <ul class="footer-social justify-content-center">
-                <li><a href="https://www.linkedin.com/in/sebastine-ogu-b36324144"><i class="fab fa-linkedin"></i></a>
+                <li><a href="https://www.linkedin.com/in/sebastine-ogu-b36324144" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
                 </li>
-                <li><a href="https://github.com/Sebastine-thrive"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://twitter.com/sebasious1"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://github.com/Sebastine-thrive" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://twitter.com/sebasious1" target="_blank"><i class="fab fa-twitter"></i></a></li>
             </ul>
-
 
         </div>
     </footer>

@@ -53,3 +53,11 @@ scrollUp.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+
+// Dark Mode functionality
+
+function changeMode() {
+    var bodyElement = document.body;
+
+    bodyElement.classList.toggle('dark-theme')
+}
