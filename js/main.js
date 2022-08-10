@@ -1,5 +1,5 @@
 /*===== Resize Navbar on Scroll =====*/
-var navbar = document.querySelector(".navbar");
+let navbar = document.querySelector(".navbar");
 // when the scroll is higher than 20 viewport height, add the sticky classs to the tag with a class navbar 
 window.onscroll = () => {
     this.scrollY > -0.5 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
@@ -57,7 +57,19 @@ scrollUp.addEventListener("click", () => {
 // Dark Mode functionality
 
 function changeMode() {
-    var bodyElement = document.body;
+    let bodyElement = document.body;
 
-    bodyElement.classList.toggle('dark-theme')
-}
+    bodyElement.classList.toggle('dark-theme');
+
+    // if (bodyElement.classList.contains('dark-theme')){
+    //     localStorage.setItem('darkMode', 'enabled');
+    // } else {
+    //     localStorage.setItem('darkMode','disabled');
+    // }
+    
+};
+
+
+// if (localStorage.getItem('darkMode') === 'enabled') {
+//     bodyElement.classList.toggle('dark-theme');
+// }
