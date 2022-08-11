@@ -220,10 +220,12 @@ a
     color: var(--black);
     font-weight: 600;
     text-transform: capitalize;
+    /* padding-left: 15px; */
 }
 .navbar .logo a span
 {
     color: var(--main-color);
+
 }
 .navbar .menu .nav-item
 {
