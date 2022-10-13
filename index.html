@@ -17,11 +17,17 @@
 </head>
 
 <body class="light-theme">
+    <!-- <body data-theme="light"> -->
+
     <!--===== Navbar Start =====-->
     <nav class="navbar">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="logo"><a href="index.html"><span>Your </span>Front-end <span>Web Developer</span></a></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./images/my image/seb_logo.png" alt="" width="100px" height="50px">
+                    </a>
+                </div>
                 <div class="links">
                     <ul class="menu">
                         <li class="nav-item"><a href="#home" class="nav-link active">Home<span></span></a></li>
@@ -35,7 +41,7 @@
                     <label class="switch">
                         <!-- <i class="fas fa-adjust"></i> -->
                         <div class='switch-items'>
-                            <input class="theme-slider" type="checkbox" onclick="changeMode()" />
+                            <input class="theme-slider" id="switchButton" type="checkbox" onclick="changeMode()" />
                             <span class="slider round"></span>
                         </div>
                     </label>
@@ -43,7 +49,6 @@
                     <!-- <input type="checkbox" id="switch" name="theme" /><label for="switch">T</label> -->
 
                 </div>
-
 
                 <div class="menu-btn">
                     <i class="fas fa-bars"></i>
@@ -73,7 +78,7 @@
                         <h4>Hello! &#128075</h4>
                         <p> I am <strong class="home-text"> Sebastine Ogu </strong> </p>
                         <span>A Front-End Web Developer</span>
-                        <p> I am a graduate of Industrial Engineering; minored in Computer Science.
+                        <p> I'm a graduate of Industrial Engineering; minored in Computer Science.
                             I also graduated from an intensive Udemy Boootcamp where I
                             learnt Software development techniques and acquired Web
                             development skills such as: HTML, CSS, JAVASCRIPT, BOOTSTRAP and REACTJS. Beyond these, I
@@ -86,7 +91,7 @@
 
                         <span class="row  justify-content-center">
                             <button class="btn-1 ">
-                                <a href="Resume document/Sebastine_Front-End Web Developer.pdf" download>DOWNLOAD
+                                <a href="/Resume document/Sebastine_Front-end Web Developer1.pdf" download>DOWNLOAD
                                     RESUME
                                 </a> </button>
                         </span>
