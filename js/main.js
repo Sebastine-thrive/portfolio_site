@@ -60,7 +60,7 @@ function changeMode() {
     bodyElement.classList.toggle('dark-theme');
 };
 
-let theme = localStorage.getItem('data-theme');
+// let theme = localStorage.getItem('data-theme');
 
 
 // const changeThemeToDark = () => {
@@ -82,3 +82,23 @@ let theme = localStorage.getItem('data-theme');
 //         changeThemeToDark();
 //     }
 // })
+
+
+
+// function zoom() {
+//     let item = document.getElementById('');
+//     item.animate([
+//         {transform:'scale(1)', background:'blue', opacity:.5, offset:.2},
+//         { transform: 'scale(.5) rotate(270deg)', background: 'blue', opacity: .5, offset: .2 }
+//         { transform: 'scale(1) rotate(0deg)', background: 'red', opacity: 1, offset: 1 }
+
+//     ],{
+//         duration:2000,
+//         easing:'ease-in-out',
+//         delay:10,
+//         direction: 'alternate',
+//         fill:'forwards'
+
+//     })
+
+// }

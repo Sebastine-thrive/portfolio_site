@@ -443,6 +443,13 @@ a
   margin: 1rem 0;
 }
 
+.skills-wrapper {
+    transition: transform .5s; /* Animation */
+}
+
+.skills-wrapper:hover {
+    transform: scale(1.1)
+}
 .skills-wrapper img {
   padding: 1.25rem;
 }
