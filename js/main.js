@@ -85,20 +85,21 @@ function changeMode() {
 
 
 
-// function zoom() {
-//     let item = document.getElementById('');
-//     item.animate([
-//         {transform:'scale(1)', background:'blue', opacity:.5, offset:.2},
-//         { transform: 'scale(.5) rotate(270deg)', background: 'blue', opacity: .5, offset: .2 }
-//         { transform: 'scale(1) rotate(0deg)', background: 'red', opacity: 1, offset: 1 }
+function rotateName() {
+    let item = document.getElementsByClassName('home-text');
+    item.animate([
+        {transform:'scale(1)', background:'blue', opacity:.5, offset:.2},
+        { transform: 'scale(.8) rotate(270deg)', background: 'blue', opacity: .5, offset: .2 },
+        { transform: 'scale(1) rotate(0deg)', background: 'red', opacity: 1, offset: 1 },
 
-//     ],{
-//         duration:2000,
-//         easing:'ease-in-out',
-//         delay:10,
-//         direction: 'alternate',
-//         fill:'forwards'
+    ],{
+        duration:2000,
+        easing:'ease-in-out',
+        delay:10,
+        iterations: 3,
+        direction: 'alternate',
+        fill:'forwards'
 
-//     })
+    })
 
-// }
+}

@@ -914,9 +914,20 @@ input:checked + .slider {
     width: 20.875rem;
   }
 
+      
+.skills-wrapper {
+    transition: transform .4s; /* Animation */
+}
+
+.skills-wrapper:hover {
+    transform: scale(1.05)
+}
+
 }
 
 @media(max-width: 413px){
+
+
     .change-mode {
         padding-left: 160px;
     }
