@@ -21,25 +21,6 @@ function linkAction() {
 navLink.forEach(n => n.addEventListener("click", linkAction))
 
 
-/*===== Scroll Section Active Link =====*/
-
-// const Section = document.querySelectorAll('section[id]')
-// function scrollActive() {
-//     const scrollY = window.pageYOffset
-//     Section.forEach(current => {
-//         const sectionHeight = current.offsetHeight
-//         const sectionTop = current.offsetTop - 50;
-//         sectionId = current.getAttribute('id')
-//         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-//             document.querySelector('.links a[href*=' + sectionId + ']').classList.add('active')
-//         }
-//         else {
-//             document.querySelector('.links a[href*=' + sectionId + ']').classList.remove('active')
-//         }
-//     })
-// }
-// window.addEventListener('scroll', scrollActive)
-
 
 // Scroll to top selection
 const scrollUp = document.querySelector("#scroll-up");
