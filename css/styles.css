@@ -453,6 +453,7 @@ a
 
 .home-image {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .my-img {
@@ -982,7 +983,15 @@ input:checked + .slider {
     {
         padding-top: 120px;
     }
-
+ .download{
+     width: 10rem;
+     padding-left: 8px;
+     padding-right: 8px;
+ }
+.home-image{
+    margin-left: -8px;
+    margin-bottom: 30px;
+}
     
 }
 
