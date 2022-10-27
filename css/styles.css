@@ -15,6 +15,7 @@
 
 html
 {
+    /* overflow-y: scroll; */
     scroll-behavior: smooth;
     height: 100%;
 }
@@ -123,7 +124,7 @@ a
 
 .download {
     background-color: white;
-    border: 2px solid #009E60;
+    /* border: 2px solid #009E60; */
     color: #009E60;
 }
 .download {
@@ -149,7 +150,7 @@ a
     height: 55px;
     padding: 15px 40px;
     margin-top: 30px;
-    border: solid var(--main-color);
+   
     border-radius: 8px;
     font-size: 16px;
     text-transform: capitalize;
@@ -807,6 +808,12 @@ input:checked + .slider {
     {
         display: none;
     }
+    
+.my-img {
+    width: 78%;
+    padding-right: 0.2rem;
+}
+
 }
 
 
@@ -965,14 +972,26 @@ input:checked + .slider {
     transform: scale(1.05)
 }
 
+ 
+    .skill-icon {
+  width: 7.5rem;
+  height: 7.5rem;
+    }
+
 }
 
-@media(max-width: 414px){
+@media(max-width: 415px){
 
    
     
     .change-mode{
         margin-left: -140px;
+    }
+
+    
+    .skill-icon {
+  width: 5.5rem;
+  height: 5.5rem;
     }
 
 }
@@ -1004,6 +1023,13 @@ input:checked + .slider {
     .menu-btn {
         margin-left: 30px;
     }
+
+    .skill-icon {
+  width: 5.5rem;
+  height: 5.5rem;
+
+}
+
 }
  
 
@@ -1031,4 +1057,31 @@ input:checked + .slider {
         margin-left: -20px;
     }
 
+}
+
+
+@media(max-width: 281px)
+{
+    .home-section .home-text strong
+    {
+        font-size: 20px;
+    }
+
+       .btn-1 {
+        font-size: 14px;
+        width: 6rem;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+     .download{
+     width: 7rem;
+     padding-left: 8px;
+     padding-right: 8px;
+ }
+
+    
+    .change-mode{
+        margin-left: -6px;
+    }
 }
