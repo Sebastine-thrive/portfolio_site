@@ -32,6 +32,9 @@ html
     --black-to-yellow: #000;
     --main-to-yellow:#00a78e;
     --main-to-ash:#00a78e; 
+    --header-footer:#00a78e;
+    --ash-to-yellow:#646f87;
+
  }
 
 .dark-theme 
@@ -44,7 +47,9 @@ html
       /* white */
      --black:#fff;
       /* ash */
-     --white:#444C38;
+     /* --white:#444C38; */
+    --white:#485320;
+
 
      /* whitesmoke */
     --black-400:#f5f5f5;
@@ -52,6 +57,10 @@ html
     --black-to-yellow: yellow;
     --main-to-yellow:yellow;
     --main-to-ash:#444C38;
+    --header-footer:#009E60;
+    --ash-to-yellow:yellow;
+
+
 }
 
 body
@@ -112,7 +121,7 @@ a
     padding: 15px 40px;
     border: none;
     color: var(--white);
-    border-radius: 8px;
+    /* border-radius: 8px; */
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 600;
@@ -123,8 +132,7 @@ a
 }
 
 .download {
-    background-color: white;
-    /* border: 2px solid #009E60; */
+    background-color:#f7f7f7;
     color: #009E60;
 }
 .download {
@@ -339,7 +347,7 @@ a
 .home-section
 {
     position: relative;
-    /* background-color: var(--black-100); */
+    background-color: var(--black-100);
     z-index: 1;
     overflow-x: hidden;
     padding-top: 80px;
@@ -407,7 +415,6 @@ a
 {
 
     font-family: "Georgia", serif;
-    /* font-family: cursive; */
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
@@ -418,7 +425,7 @@ a
 .home-section .home-text p
 {   
     font-family: "Georgia", serif;
-    font-size: 23px;
+    font-size: 18px;
     color: var(--black);
     font-weight: 2.5rem;
     line-height: 1.8rem;
@@ -439,8 +446,9 @@ a
 }
 
 .home-section  {
-    background-color: yellowgreen;
-}
+    background-color:var(--header-footer)
+    /* #00a78e */
+}  
 
 .home-section .home-image .img-box img
 {
@@ -690,7 +698,8 @@ a
 /*footer*/
 .footer
 {
-    background-color: var(--main-to-ash);    
+    background-color: var(--header-footer);
+    /* var(--main-to-ash);     */
 }
 
 .footer,.content-section::after
@@ -758,7 +767,7 @@ footer .copyright-text
 .switch .switch-items {
   position: relative;
   display: block;
-  background: var(--main-to-yellow);
+  background:var(--ash-to-yellow) ;
   width: 100px;
   height: 15px;
   border-radius: 25px;
