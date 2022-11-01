@@ -572,7 +572,7 @@ a
 .portfolio-container p {
   padding: 0.4rem;
   margin-bottom: 20px;
-  font-size: 18px; 
+  font-size: 16px; 
   color: var(--black);
 }
 
@@ -584,11 +584,13 @@ a
 
 .portfolio-card {
   background-color: var(--white);
-  border-radius: 11px;
+  border-radius: 5px;
   box-shadow: 0 3px 10px var(--main-to-yellow);
   padding: 20px;
-  margin: 10px;
+  margin: 1rem  2rem;
 }
+
+
 
 
 
@@ -807,6 +809,10 @@ input:checked + .slider {
     .header-social
     {
         left: 10px;
+    }
+
+    .portfolio-card {
+        margin-left: 3rem;
     }
 }
 
