@@ -118,6 +118,7 @@ a
 .btn-1
 {
     background-color: var(--main-color);
+    position: relative;
     padding: 15px 40px;
     border: none;
     color: var(--white);
@@ -130,6 +131,22 @@ a
     margin-right: 10px;
 
 }
+.btn-1::after {
+         content: '';
+         position: absolute;
+         right: 10%;
+         top: 0;
+         height: 100%;
+         width: 20%;
+         background: #e6e60a;
+         opacity: 0;
+         transition: all 0.5s ease-in-out;
+     }
+
+.btn-1:hover::after {
+           right: 0%;
+           opacity:0.9 ;
+     }
 
 .download {
     background-color:#f7f7f7;
@@ -140,11 +157,11 @@ a
 }
 
 .btn-1:hover
-{        background-color: white;
-    
+        
+{    
+    background-color: white;
         color: #009E60;
-
-}
+} 
 
 .download:hover {
     background-color: #009E60;
@@ -158,13 +175,29 @@ a
     height: 55px;
     padding: 15px 40px;
     margin-top: 30px;
-   
-    border-radius: 8px;
+    /* border-radius: 8px; */
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 600;
     transition: all 0.3s ease-out;
 }
+
+.btn-link::after {
+         content: '';
+         position: absolute;
+         left: 10%;
+         top: 0;
+         height: 100%;
+         width: 20%;
+         background: #e6e60a;
+         opacity: 0;
+         transition: all 0.5s ease-in-out;
+     }
+
+.btn-link:hover::after {
+           left: 0%;
+           opacity:0.9 ;
+     }
 
 .btn-link:hover
 {
@@ -349,7 +382,7 @@ a
     position: relative;
     background-color: var(--black-100);
     z-index: 1;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     padding-top: 80px;
 }
 .header-social
@@ -584,10 +617,13 @@ a
 
 .portfolio-card {
   background-color: var(--white);
-  border-radius: 5px;
+  border-top-left-radius:5px ;
+  border-top-right-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 0 3px 10px var(--main-to-yellow);
   padding: 20px;
   margin: 1rem  2rem;
+  border-bottom: 1rem solid var(--main-to-yellow);
 }
 
 
@@ -735,7 +771,9 @@ footer .copyright-text
 
 .footer-social li a:hover{
     font-size: 20px;
-    color:var(--black-400)
+    color:var(--black-400);
+    transition: all 0.2s ease-in-out;
+
 }
 
 /* Scroll to top button */
