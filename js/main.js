@@ -40,28 +40,3 @@ function changeMode() {
     let bodyElement = document.body;
     bodyElement.classList.toggle('dark-theme');
 };
-
-// let theme = localStorage.getItem('data-theme');
-
-
-// const changeThemeToDark = () => {
-//     document.documentElement.setAttribute('data-theme', 'dark');
-//     localStorage.setItem('data-theme', 'dark')
-// }
-
-// const changeThemeToLight = () => {
-//     document.documentElement.setAttribute('data-theme', 'light');
-//     localStorage.setItem('data-theme', 'light')
-// }
-
-// const switchButton = document.getElementById('switchButton');
-// switchButton.addEventListener('change', () => {
-//     let theme = localStorage.getItem('data-theme');
-//     if (theme ==='dark') {
-//         changeThemeToLight();
-//     } else {
-//         changeThemeToDark();
-//     }
-// })
-
-
